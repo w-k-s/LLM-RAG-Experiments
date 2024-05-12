@@ -74,6 +74,7 @@ try:
     prompt_builder = PromptBuilder(template=template)
 
     print("Looking for OpenAI API Key")
+    # A generator generates answers to questions
     if "OPENAI_API_KEY" not in os.environ:
         os.environ["OPENAI_API_KEY"] = getpass("Enter OpenAI API key:")
     generator = OpenAIGenerator(model="gpt-3.5-turbo")
