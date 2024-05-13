@@ -24,6 +24,7 @@ try:
 
     # Load Data set. The data has already been cleaned and split into tokens
     print("Creating haystack documents from training data")
+
     docs = []
     with open("dataset/expenses.csv") as csvfile:
         reader = csv.DictReader(csvfile)
